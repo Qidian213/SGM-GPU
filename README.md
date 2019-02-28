@@ -1,6 +1,6 @@
 # Semi-Global Matching on the GPU
 
-This is the implementation of [Embedded real-time stereo estimation via Semi-Global Matching on the GPU](http://www.sciencedirect.com/science/article/pii/S1877050916306561), [D. Hernandez-Juarez](http://www.cvc.uab.es/people/dhernandez/) et al, ICCS 2016.
+This is the implementation of [Embedded real-time stereo estimation via Semi-Global Matching on the GPU](http://www.sciencedirect.com/science/article/pii/S1877050916306561), [D. Hernandez-Juarez](http://www.cvc.uab.es/people/dhernandez/) et al, ICCS 2016. Then rebuild to provide p1 p2 for every pixel points with a pointer.
 
 Results for example image (left and right Images):
 
@@ -25,8 +25,6 @@ make
 ## How to use it
 
 Type: `./sgm`
-
-The arguments `p1` and `p2` are semi-global matching parameters, for more information read the SGM paper.
 
 ## Related Publications
 
