@@ -2,27 +2,14 @@
 
 This is the implementation of [Embedded real-time stereo estimation via Semi-Global Matching on the GPU](http://www.sciencedirect.com/science/article/pii/S1877050916306561), [D. Hernandez-Juarez](http://www.cvc.uab.es/people/dhernandez/) et al, ICCS 2016.
 
-Performance obtained measured in Frames Per Second (FPS):
-
-|                 |     2 paths   |     4 paths   |     8 paths     |
-| -------------   |:-------------:|:-------------:|:---------------:|
-| NVIDIA Tegra X1 | 81            |    42         |     19          |
-| NVIDIA Titan X  | 886           |     475       |     237         |
-
 Results for example image (left and right Images):
 
-<img src="example/left/2.png" alt="Left Image" width="45%">
-<img src="example/right/2.png" alt="Right Image" width="45%">
+<img src="left.png" alt="Left Image" width="45%">
+<img src="right.png" alt="Right Image" width="45%">
 
 Results for example image (Output):
 
-<img src="example/disparities/2.png" alt="Example output" width="100%">
-
-Parameters used for KITTI 2015:
-- 2 path directions: P1=7, P2=84
-- 4 path directions: P1=7, P2=86
-- 8 path directions: P1=6, P2=96
-
+<img src="disp.png" alt="Example output" width="100%">
 
 ## How to compile and test
 
@@ -37,18 +24,9 @@ make
 
 ## How to use it
 
-Type: `./sgm dir p1 p2`
+Type: `./sgm`
 
 The arguments `p1` and `p2` are semi-global matching parameters, for more information read the SGM paper.
-
-`dir` is the name of the directory which needs this format:
-
-```
-dir
----- left (images taken from the left camera)
----- right (right camera)
----- disparities (results will be here)
-```
 
 ## Related Publications
 
